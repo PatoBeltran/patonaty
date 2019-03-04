@@ -2,6 +2,7 @@ import * as React from "react";
 import { useTranslation } from 'react-i18next';
 import NoMatch from "./noMatch";
 import { Loading } from "./loading";
+import { Location } from "./location";
 
 interface GuestInfo {
     name: string,
@@ -24,7 +25,13 @@ const App = ({ match }: any) => {
     if (!guest) return <NoMatch />;
 
     return (
-        <div>{guest.name}</div>
+        <>
+            <div className="invitation-title">You are invited to our wedding!</div>
+            <div className="where">Optimism brewery</div>
+            <Location />
+            <div className="when">4/20</div>
+            <div>We have separated a seat for you, {guest.name}, and would love to have you in our wedding.</div>
+        </>
     );
 }
 

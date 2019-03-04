@@ -15,7 +15,7 @@ const MainComponent = () => (
     <React.Suspense fallback={<></>}>
         <Router>
             <Switch>
-                <Route exact path="/:id" render={ () => <App />} />
+                <Route exact path="/:id" render={() => <App />} />
                 <Route render={() => <NoMatch />} />
             </Switch>
         </Router>
