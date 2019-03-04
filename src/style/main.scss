@@ -1,5 +1,8 @@
+@import "./colors.scss";
+
 body {
     font-family: "Avenir";
+    background-color: $bg;
 }
 
 @import "./app.scss";

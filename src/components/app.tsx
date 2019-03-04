@@ -1,14 +1,31 @@
 import * as React from "react";
 import { useTranslation } from 'react-i18next';
-import * as BackgroundImg from "../assets/background.jpg";
+import NoMatch from "./noMatch";
+import { Loading } from "./loading";
 
-export const App = ({}) => {
+interface GuestInfo {
+    name: string,
+    plusOne?: GuestInfo
+}
+
+const App = ({ match }: any) => {
     const { t } = useTranslation();
+    let [guest, setGuest] = React.useState<GuestInfo | null>(null);
+    let [loading, setLoading] = React.useState<boolean>(true);
+
+    React.useEffect(() => {
+        // Call API
+        // match.params.id
+        setLoading(false);
+        setGuest({ name: "Arturo Mendirichaga" });
+    });
+
+    if (loading) return <Loading />;
+    if (!guest) return <NoMatch />;
 
     return (
-        <React.Fragment>
-            <h1>{t('welcome')}</h1>
-        </React.Fragment>
+        <div>{guest.name}</div>
     );
 }
 
+export default App;
