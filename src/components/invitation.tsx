@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useTranslation } from 'react-i18next';
+import GoldText from "./design/goldText";
 
 const Invitation = ({ pronoun, guestName }: any) => {
     const { t } = useTranslation();
@@ -11,7 +12,7 @@ const Invitation = ({ pronoun, guestName }: any) => {
             <h1>{greeting},</h1>
             <h1>
                 <span>{t('invitation')}&nbsp;</span>
-                <span className="gold-text">{t('date')}.</span>
+                <GoldText>{t('date')}.</GoldText>
             </h1>
         </>
     );

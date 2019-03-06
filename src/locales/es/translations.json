@@ -10,10 +10,12 @@
     "ceremonyStep": "Ceremonia",
     "receptionStep": "Fiesta",
     "rsvpStep": "RSVP",
-    "ceremonyDescription": "Habrá una pequeña ceremony en {{location}} a las {{time}}",
+    "ceremonyDescription": "Habrá una pequeña ceremonia en",
+    "atTime": "a las",
     "receptionDescription": "Después haremos fiesta en Optimism, la cervecería más rica de todo Seattle. Ahí estaremos de {{startTime}} a {{endTime}}",
     "rsvpCoupleDescription": "Te tenemos un lugar reservado para tí y {{partnerName}} en nuestra boda. ¿Irán?",
     "rsvpButton": "Enviar",
-    "pageNotFound": "No encontramos tu invitación, por favor contacta a {{bride}} o a {{groom}}",
+    "pageNotFound": "No encontramos tu invitación, por favor contacta a",
+    "or": "o a",
     "thankYou": "¡Gracias!"
 }

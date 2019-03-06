@@ -2,11 +2,12 @@ import * as React from "react";
 import { useTranslation } from 'react-i18next';
 import NoMatch from "./noMatch";
 import { Loading } from "./loading";
-import { Location } from "./location";
 import { getGuest, going, notGoing } from "../framework/trello";
 import {withRouter} from "react-router";
 import Invitation from "./invitation";
 import Footer from "./footer";
+import Ceremony from "./ceremony";
+import Step from "./design/step";
 interface GuestInfo {
     name: string,
     plusOne?: GuestInfo
@@ -38,7 +39,12 @@ const App = ({ match }: any) => {
     console.log(guest);
     return (
         <>
-            <Invitation guestName={guest.name.split(" ")[0]} pronoun="she"/>
+            <Step>
+                <Invitation guestName={guest.name.split(" ")[0]} pronoun="she"/>
+            </Step>
+            <Step>
+                <Ceremony />
+            </Step>
             <Footer />
         </>
     );

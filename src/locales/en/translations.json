@@ -10,10 +10,12 @@
     "ceremonyStep": "Ceremony",
     "receptionStep": "Reception",
     "rsvpStep": "RSVP",
-    "ceremonyDescription": "We will have a small ceremony at {{location}} at {{time}}",
+    "ceremonyDescription": "We will have a small ceremony at ",
+    "atTime": "at",
     "receptionDescription": "Afterwards, we will host a party at {{location}}, the best brewery in Seattle. We'll be there from {{startTime}} to {{endTime}}",
     "rsvpCoupleDescription": "We have a seat reserved for you and {{partnerName}}. Will you be going?",
     "rsvpButton": "Send",
-    "pageNotFound": "We could not find your invitation. Please contact {{bride}} or {{groom}}",
+    "pageNotFound": "We could not find your invitation. Please contact",
+    "or": "or",
     "thankYou": "Thank you!"
 }
