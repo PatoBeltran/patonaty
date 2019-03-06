@@ -2,8 +2,8 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { HashRouter as Router, Route, Switch} from "react-router-dom";
 
-const App = React.lazy(() => import('./components/app'));
-const NoMatch = React.lazy(() => import('./components/noMatch'));
+import App from './components/app';
+import NoMatch from './components/noMatch';
 
 import "./style/main.scss"
 

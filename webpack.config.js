@@ -1,4 +1,5 @@
-var path = require('path');
+const path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry: './src/index.tsx',
@@ -39,5 +40,8 @@ module.exports = {
     watchOptions: {
         poll: true
     },
-    mode: 'development'
+    mode: 'development',
+    plugins: [
+        new Dotenv()
+    ]
 }
