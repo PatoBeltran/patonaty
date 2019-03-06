@@ -22,16 +22,18 @@ const App = ({ match }: any) => {
     }
 
     React.useEffect(() => {
-        guest = getGuest(match.params.id);
-        if (guest) {
-            setGuest({name: guest.name});
+        const currentGuest = getGuest(match.params.id);
+        
+        if (currentGuest) {
+            setGuest(currentGuest);
             setLoading(false);
         }
-    });
+    }, [match.params.id]);
 
     if (loading) return <Loading />;
     if (!guest) return <NoMatch />;
 
+    console.log(guest);
     return (
         <>
             <div className="invitation-title">You are invited to our wedding!</div>

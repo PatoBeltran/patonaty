@@ -22,3 +22,14 @@ declare module "*.scss" {
     const content: any;
     export = content;
 }
+
+interface GuestsList {
+    [urlPath: string]: GuestMetadata;
+}
+
+interface GuestMetadata {
+    name: string;
+    id: string;
+    pronoun: 'he' | 'she';
+    plusOne?: GuestMetadata;
+}
