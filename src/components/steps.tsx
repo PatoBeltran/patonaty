@@ -9,7 +9,7 @@ const Steps = ({guest}: any) => (
     <div className="app-container">
         <div className="steps">
             <Step>
-                <Invitation guestName={guest.name.split(" ")[0]} pronoun="she"/>
+                <Invitation guestName={guest.name.split(" ")[0]} pronoun={guest.pronoun}/>
             </Step>
             <Step>
                 <Ceremony />

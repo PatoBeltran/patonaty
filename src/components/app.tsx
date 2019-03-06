@@ -29,7 +29,6 @@ const App = ({ match }: any) => {
     if (loading) content = <Loading />;
     if (!guest) content = <NoMatch />;
 
-    console.log(guest);
     return (
         <>
             {content}
