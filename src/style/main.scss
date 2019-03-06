@@ -6,4 +6,16 @@ body {
     padding: 2em;
 }
 
+h1 {
+    font-weight: 100;
+    font-size: 3em;
+    color: $white;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 2.5em;
+    color: $white;
+}
+
 @import "./app.scss";
