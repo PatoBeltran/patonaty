@@ -2,3 +2,34 @@
     width: 25em;
     height: 20em;
 }
+
+.gold-text {
+    color: $gold;
+}
+
+.footer {
+    font-family: "Pacifico";
+    font-size: 1.5em;
+    color: $darkMint;
+    position: fixed;
+    bottom: 10%;
+}
+
+.app-container {
+    display: flex;
+    .menu {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 10%;
+        right: 0;
+        position: fixed;
+    }
+    .steps {
+        width: 90%;
+        .step {
+            height: 90vh;
+        }
+    }
+}

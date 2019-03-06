@@ -18,23 +18,4 @@ h2 {
     color: $white;
 }
 
-.gold-text {
-    color: $gold;
-}
-
-.steps {
-    .step {
-        height: 90vh;
-    }
-}
-
-.footer {
-    font-family: "Pacifico";
-    font-size: 1.5em;
-    color: $darkMint;
-    position: fixed;
-    bottom: 10%;
-}
-
-
 @import "./app.scss";
