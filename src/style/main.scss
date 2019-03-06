@@ -22,8 +22,10 @@ h2 {
     color: $gold;
 }
 
-.step {
-    height: 90vh;
+.steps {
+    .step {
+        height: 90vh;
+    }
 }
 
 .footer {

@@ -8,7 +8,7 @@ const Ceremony = () => {
 
     return (
         <>
-            <h2>{t('ceremonyDescription')} <GoldText>101 Broadway</GoldText> {t('at')} <GoldText>5:30 pm</GoldText></h2>
+            <h2>{t('ceremonyDescription')} <GoldText>101 Broadway</GoldText> {t('atTime')} <GoldText>5:30 pm</GoldText></h2>
             <Location />
         </>
     );
