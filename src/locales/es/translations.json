@@ -1,3 +1,19 @@
 {
-    "welcome": "Bienvenido a React!"
+    "welcome": "Bienvenido a React!",
+    "greetHim": "Querido {{guestName}}",
+    "greetHer": "Querida {{guestName}}",
+    "invitation": "Te queremos invitar a nuestra boda civil el día",
+    "date": "20 de abril del 2019",
+    "signOff": "Atte.",
+    "sign": "Pato y Naty",
+    "invitationStep": "Invitación",
+    "ceremonyStep": "Ceremonia",
+    "receptionStep": "Fiesta",
+    "rsvpStep": "RSVP",
+    "ceremonyDescription": "Habrá una pequeña ceremony en {{location}} a las {{time}}",
+    "receptionDescription": "Después haremos fiesta en Optimism, la cervecería más rica de todo Seattle. Ahí estaremos de {{startTime}} a {{endTime}}",
+    "rsvpCoupleDescription": "Te tenemos un lugar reservado para tí y {{partnerName}} en nuestra boda. ¿Irán?",
+    "rsvpButton": "Enviar",
+    "pageNotFound": "No encontramos tu invitación, por favor contacta a {{bride}} o a {{groom}}",
+    "thankYou": "¡Gracias!"
 }
