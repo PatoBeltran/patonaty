@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import NoMatch from "./noMatch";
 import { Loading } from "./loading";
 import { Location } from "./location";
-import { getGuest, going, notGoing } from "../cards/actions";
+import { getGuest, going, notGoing } from "../framework/trello";
 import {withRouter} from "react-router";
 interface GuestInfo {
     name: string,
