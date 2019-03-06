@@ -38,7 +38,7 @@ const App = ({ match }: any) => {
     console.log(guest);
     return (
         <>
-            <Invitation guestName={guest.name} pronoun="she"/>
+            <Invitation guestName={guest.name.split(" ")[0]} pronoun="she"/>
             <Footer />
         </>
     );
