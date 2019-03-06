@@ -10,8 +10,8 @@ const lists = {
 };
 
 const labels = {
-    she: '5c7f62ab1b476953dd4e37d9',
-    he: '5c7f62a55da31988e945b65f'
+    '5c7f62ab1b476953dd4e37d9': 'she',
+    '5c7f62a55da31988e945b65f': 'he'
 }
 
 const listFileHeader = {
@@ -78,12 +78,13 @@ const parseBoardCards = (data) => {
 
         cards_json[url] = { 
             name: card.name, 
-            id: card.id
+            id: card.id,
+            pronoun: labels[card.idLabels[0]]
         };
 
         if (card.desc) {
             const plusOne = data.filter(c => c.id === card.desc)[0];
-            cards_json[url]['plusOne'] = { name: plusOne.name, id: plusOne.id };
+            cards_json[url]['plusOne'] = { name: plusOne.name, id: plusOne.id, pronoun: labels[plusOne.idLabels[0]] };
         }
     });
 
