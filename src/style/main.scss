@@ -6,4 +6,23 @@ body {
     padding: 2em;
 }
 
+h1 {
+    font-weight: 200;
+    font-size: 3em;
+    color: $white;
+}
+
+.gold-text {
+    color: $gold;
+}
+
+.footer {
+    font-family: "Pacifico";
+    font-size: 1.5em;
+    color: $darkMint;
+    position: fixed;
+    bottom: 10%;
+}
+
+
 @import "./app.scss";

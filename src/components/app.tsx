@@ -5,6 +5,8 @@ import { Loading } from "./loading";
 import { Location } from "./location";
 import { getGuest, going, notGoing } from "../framework/trello";
 import {withRouter} from "react-router";
+import Invitation from "./invitation";
+import Footer from "./footer";
 interface GuestInfo {
     name: string,
     plusOne?: GuestInfo
@@ -36,14 +38,8 @@ const App = ({ match }: any) => {
     console.log(guest);
     return (
         <>
-            <div className="invitation-title">You are invited to our wedding!</div>
-            <div className="where">Optimism brewery</div>
-            <Location />
-            <div className="when">4/20</div>
-            <div>We have separated a seat for you, {guest.name}, and would love to have you in our wedding.</div>
-            <div>{guest.name}</div>
-            <button onClick={() => handleGoing()}>Going</button>
-            <button onClick={() => handleNotGoing()}>Not going</button>
+            <Invitation guestName={guest.name} pronoun="she"/>
+            <Footer />
         </>
     );
 }
