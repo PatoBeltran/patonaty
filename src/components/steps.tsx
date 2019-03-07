@@ -6,7 +6,7 @@ import Menu from "./menu";
 
 
 const Steps = ({guest}: any) => (
-    <div className="app-container">
+    <>
         <div className="steps">
             <Step>
                 <Invitation guestName={guest.name.split(" ")[0]} pronoun={guest.pronoun}/>
@@ -16,7 +16,7 @@ const Steps = ({guest}: any) => (
             </Step>
         </div>
         <Menu />
-    </div>
+    </>
 )
 
 
