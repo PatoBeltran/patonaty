@@ -8,10 +8,10 @@ import Menu from "./menu";
 const Steps = ({guest}: any) => (
     <>
         <div className="steps">
-            <Step>
+            <Step name="invitation">
                 <Invitation guestName={guest.name.split(" ")[0]} pronoun={guest.pronoun}/>
             </Step>
-            <Step>
+            <Step name="ceremony">
                 <Ceremony />
             </Step>
         </div>

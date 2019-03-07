@@ -1,33 +1,28 @@
 import * as React from "react";
 import {useTranslation} from "react-i18next";
+import {StepLink} from "./stepLink";
 
 const Menu = () => {
     const { t } = useTranslation()
-    return (<div className="menu-wrapper">
+    return (
+    <div className="menu-wrapper">
         <div className="separator" />
         <div className="menu">
-            <StepLink>
+            <StepLink linkTo="invitation">
                 {t('invitationStep')}
             </StepLink>
-            <StepLink current>
+            <StepLink linkTo="ceremony">
                 {t('ceremonyStep')}
             </StepLink>
-            <StepLink>
+            <StepLink linkTo="reception">
                 {t('receptionStep')}
             </StepLink>
-            <StepLink>
+            <StepLink linkTo="rsvp">
                 {t('rsvpStep')}
             </StepLink>
         </div>
     </div>)
 }
-
-const StepLink = ({children, current}: any) => (
-    <div className="step-link">
-    <div className={current? "current icon" : "icon"}></div>
-    <div className={current? "current title" : "title"}>{...children}</div>
-    </div>
-)
 
 
 export default Menu;
