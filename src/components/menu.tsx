@@ -2,22 +2,23 @@ import * as React from "react";
 import {useTranslation} from "react-i18next";
 import {StepLink} from "./stepLink";
 
-const Menu = () => {
-    const { t } = useTranslation()
+const Menu = ({ currentPage, goToPage }: any) => {
+    const { t } = useTranslation();
+    
     return (
     <div className="menu-wrapper">
         <div className="separator" />
         <div className="menu">
-            <StepLink linkTo="invitation">
+            <StepLink active={currentPage === 1} linkTo="invitation" onClick={() => goToPage(0)}>
                 {t('invitationStep')}
             </StepLink>
-            <StepLink linkTo="ceremony">
+            <StepLink active={currentPage === 2} linkTo="ceremony" onClick={() => goToPage(1)}>
                 {t('ceremonyStep')}
             </StepLink>
-            <StepLink linkTo="reception">
+            <StepLink active={currentPage === 3} linkTo="reception" onClick={() => goToPage(2)}>
                 {t('receptionStep')}
             </StepLink>
-            <StepLink linkTo="rsvp">
+            <StepLink active={currentPage === 4} linkTo="rsvp" onClick={() => goToPage(3)}>
                 {t('rsvpStep')}
             </StepLink>
         </div>

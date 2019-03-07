@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useTranslation } from 'react-i18next';
 import NoMatch from "./noMatch";
 import { Loading } from "./loading";
 import { getGuest } from "../framework/trello";
@@ -13,7 +12,6 @@ interface GuestInfo {
 }
 
 const App = ({ match }: any) => {
-    const { t } = useTranslation();
     let [guest, setGuest] = React.useState<GuestInfo | null>(null);
     let [loading, setLoading] = React.useState<boolean>(true);
     let content = <Steps setLoading={setLoading} guest={guest}/>

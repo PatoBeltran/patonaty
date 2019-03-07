@@ -8,27 +8,50 @@ import Menu from "./menu";
 import Reception from "./reception";
 import RSVP from "./rsvp";
 
-const Steps = ({ guest }: any) => (
-    <>
-        <div className="steps">
-            <ReactPageScroller>
-                <Step name="invitation">
-                    <Invitation guestName={guest.name.split(" ")[0]} pronoun={guest.pronoun} />
-                </Step>
-                <Step name="ceremony">
-                    <Ceremony />
-                </Step>
-                <Step name="reception">
-                    <Reception />
-                </Step>
-                <Step name="rsvp">
-                    <RSVP />
-                </Step>
-            </ReactPageScroller>
-        </div>
-        <Menu />
-    </>
-)
+export default class Steps extends React.Component<any, any> {
+    private scroller: any;
 
+    constructor(props: any) {
+        super(props);
 
-export default Steps;
+        this.state = {
+            currentPage: 1
+        };
+
+        this.scroller = null;
+        this.goToPage = this.goToPage.bind(this);
+        this.pageOnChange = this.pageOnChange.bind(this);
+    }
+
+    pageOnChange(number: number) {
+        this.setState({ currentPage: number });
+    };
+
+    goToPage(pageNumber: number) {
+        this.scroller.goToPage(pageNumber);
+    }
+
+    render() {
+        const { guest } = this.props;
+        return (
+            <>
+                <div className="steps">
+                    <ReactPageScroller ref={(c: any) => this.scroller = c} pageOnChange={this.pageOnChange}>
+                        <Step name="invitation">
+                            <Invitation guestName={guest.name.split(" ")[0]} pronoun={guest.pronoun} />
+                        </Step>
+                        <Step name="ceremony">
+                            <Ceremony />
+                        </Step>
+                        <Step name="reception">
+                            <Reception />
+                        </Step>
+                        <Step name="rsvp">
+                            <RSVP />
+                        </Step>
+                    </ReactPageScroller>
+                </div>
+                <Menu currentPage={this.state.currentPage} goToPage={(page: number) => this.goToPage(page)} />
+            </>);
+    }
+}

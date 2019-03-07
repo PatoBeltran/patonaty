@@ -1,19 +1,14 @@
 import * as React from "react";
-import {Link} from "react-scroll";
 
-export const StepLink = ({children, linkTo}: any) => {
-    let [active, setActive] = React.useState<boolean>(false)
+export const StepLink = ({ active, children, linkTo, onClick }: any) => {
     return (
-    <Link
-        to={linkTo}
-        className="step-link"
-        spy
-        smooth
-        offset={-75}
-        duration={500}
-        onSetActive={(_: string) => setActive(true)}
-        onSetInactive={() => setActive(false)}>
+    <a
+        onClick={(e: any) => {
+            e && e.preventDefault();
+            onClick();
+        }}
+        className="step-link">
         <div className={active? "active icon" : "icon"}></div>
         <div className={active? "active title" : "title"}>{...children}</div>
-    </Link>)
+    </a>)
 }
