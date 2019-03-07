@@ -35,7 +35,7 @@ export default class Steps extends React.Component<any, any> {
         const { guest } = this.props;
         return (
             <>
-                <div className="steps">
+                <div className={`steps background${this.state.currentPage}`}>
                     <ReactPageScroller ref={(c: any) => this.scroller = c} pageOnChange={this.pageOnChange}>
                         <Step>
                             <Invitation guestName={guest.name.split(" ")[0]} pronoun={guest.pronoun} />
