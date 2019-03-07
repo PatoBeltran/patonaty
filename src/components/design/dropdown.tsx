@@ -1,5 +1,6 @@
 import * as React from "react";
 
+
 export const Dropdown = ({options, selected, select}: any) => {
     let [showOptions, setShowOptions] = React.useState<boolean>(false)
 
@@ -9,9 +10,9 @@ export const Dropdown = ({options, selected, select}: any) => {
 
     return (
     <div className="dropdown" onClick={() => setShowOptions(true)}>
-        <div className="placeholder" hidden={showOptions}>{selected}</div>
+        <div className="placeholder" hidden={showOptions}>{selected.value}</div>
         <Options
-        handleClickOption={ (option: string) => select(option) }
+        handleClickOption={ (option: any) => select(option) }
         options={options}
         selected={selected}
         showOptions={showOptions}/>
@@ -20,12 +21,12 @@ export const Dropdown = ({options, selected, select}: any) => {
 
 const Options = ({handleClickOption, options, selected, showOptions}: any) => (
     <div className="options">
-    { options.map((option: string) => (
+    { options.map((option: any) => (
         <Option
-        selected={selected==option}
+        selected={selected.key==option.key}
         handleClick={() => handleClickOption(option)}
         hidden={!showOptions}>
-        {option}
+        {option.value}
         </Option>
     ))}
     </div>

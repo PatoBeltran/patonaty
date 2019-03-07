@@ -16,8 +16,15 @@
     "receptionDescription2": "la cervecería más rica de todo Seattle. Ahí estaremos de",
     "to": "a",
     "rsvpCoupleDescription": "Te tenemos un lugar reservado para tí y {{partnerName}} en nuestra boda. ¿Irán?",
+    "rsvpDescription": "Te tenemos un lugar reservado para tí. ¿Irás?",
     "rsvpButton": "Enviar",
-    "rsvpOptions": ["Sí vamos", "No vamos", "Solo yo voy"],
+    "rsvpCoupleOptions": [
+        { "key": "coupleGoing", "value": "Sí vamos"},
+        { "key": "going", "value": "Solo yo voy"},
+        { "key": "notGoing", "value": "No vamos"}],
+    "rsvpOptions": [
+        { "key": "going", "value": "Sí voy"},
+        { "key": "notGoing", "value": "No voy"}],
     "pageNotFound": "No encontramos tu invitación, por favor contacta a",
     "or": "o a",
     "thankYou": "¡Gracias!"

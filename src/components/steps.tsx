@@ -20,7 +20,7 @@ const Steps = ({guest}: any) => (
                 <Reception />
             </Step>
             <Step name="rsvp">
-                <RSVP />
+                <RSVP guest={guest}/>
             </Step>
         </div>
         <Menu />
