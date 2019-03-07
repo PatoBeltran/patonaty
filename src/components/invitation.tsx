@@ -8,7 +8,7 @@ const Invitation = ({ pronoun, guestName }: any) => {
     const greeting = t(greetingKey, {guestName: guestName})
 
     return (
-        <div className='invitation-container animated fadeInDown'>
+        <div className='step-container animated fadeInDown'>
             <div className='dear-guest'>{greeting},</div>
             <div>
                 <span>{t('invitation')}&nbsp;</span>

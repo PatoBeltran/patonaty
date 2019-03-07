@@ -12,15 +12,15 @@ const RSVP = ({couple, status}: any) => {
     const description = couple ? t('rsvpCoupleDescription'): "No description yet"
     
     return (
-        <>
-            <h1><GoldText>Répondez s'il vous plaît</GoldText></h1>
-            <h2>{description}</h2>
+        <div className='step-container'>
+            <div><GoldText>Répondez s'il vous plaît</GoldText></div>
+            <div>{description}</div>
             <Dropdown
-            options={t('rsvpOptions', {returnObjects: true})}
-            selected={rsvp}
-            select={setRSVP} />
+                options={t('rsvpOptions', {returnObjects: true})}
+                selected={rsvp}
+                select={setRSVP} />
             <button>{t('rsvpButton')} <FontAwesomeIcon icon={faPaperPlane} /></button>
-        </>
+        </div>
     );
 }
 

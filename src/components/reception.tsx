@@ -7,10 +7,10 @@ const Reception = () => {
     const { t } = useTranslation();
 
     return (
-        <>
-            <h2>{t('receptionDescription')} <GoldText>Optimism</GoldText>, {t('receptionDescription2')} <GoldText>7pm</GoldText> {t('to')} <GoldText>11:30pm</GoldText></h2>
+        <div className='step-container'>
+            <div className='reception-desc'>{t('receptionDescription')} <GoldText>Optimism</GoldText>, {t('receptionDescription2')} <GoldText>7pm</GoldText> {t('to')} <GoldText>11:30pm</GoldText></div>
             <Location />
-        </>
+        </div>
     );
 }
 

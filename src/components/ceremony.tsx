@@ -7,10 +7,10 @@ const Ceremony = () => {
     const { t } = useTranslation();
 
     return (
-        <>
-            <h2>{t('ceremonyDescription')} <GoldText>101 Broadway</GoldText> {t('atTime')} <GoldText>5:30 pm</GoldText></h2>
+        <div className='step-container'>
+            <div className='ceremony-desc'>{t('ceremonyDescription')} <GoldText>101 Broadway</GoldText> {t('atTime')} <GoldText>5:30 pm</GoldText></div>
             <Location />
-        </>
+        </div>
     );
 }
 

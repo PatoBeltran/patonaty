@@ -6,20 +6,24 @@
     }
 }
 
-/** =============== Invitation ================= **/
-
-.invitation-container {
+.step-container {
     font-weight: 100;
     color: $white;
-    padding: 1em;
-    font-size: 4em;
+    padding: 0.7em;
+    font-size: 3.25em;
+    display: flex;
+    flex-direction: column;
 
     @include phone {
         padding: 0 1em;
-        font-size: 6em;
+        font-size: 5em;
     }
 }
 
 .dear-guest {
     margin: 1em 0;
+}
+
+.ceremony-desc, .reception-desc {
+    margin: 0.40em 0;
 }
