@@ -25,7 +25,8 @@
     "rsvpOptions": [
         { "key": "going", "value": "Sí voy"},
         { "key": "notGoing", "value": "No voy"}],
-    "pageNotFound": "No encontramos tu invitación, por favor contacta a",
+    "pageNotFound": "Oh no! No encontramos tu invitación!",
+    "pleaseContact": "Por favor contacta a",
     "or": "o a",
     "thankYou": "¡Gracias!"
 }

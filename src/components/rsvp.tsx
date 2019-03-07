@@ -52,13 +52,13 @@ const RSVP = ({guest, status}: any) => {
     if (loading) return <Loading />;
 
     return (
-        <>
-            <h1><GoldText>Répondez s'il vous plaît</GoldText></h1>
-            <h2>{description}</h2>
+        <div className='step-container'>
+            <div><GoldText>Répondez s'il vous plaît</GoldText></div>
+            <div>{description}</div>
             <Dropdown
-            options={options}
-            selected={rsvp}
-            select={setRSVP} />
+                options={options}
+                selected={rsvp}
+                select={setRSVP} />
             <button onClick={() => submit()}>
                 {t('rsvpButton')} <FontAwesomeIcon icon={faPaperPlane} />
             </button>

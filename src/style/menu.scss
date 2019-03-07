@@ -1,0 +1,109 @@
+.menu-wrapper {
+    height: 100%;
+    width: 20%;
+    min-width: 120px;
+
+    @include phone {
+        height: 15%;
+        width: 100%;
+        min-width: auto;
+        min-height: 120px;
+    }
+
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+
+    .separator {
+        width: 2px;
+        height: 49.5%;
+
+        @include phone {
+            width: 69.5%;
+            height: 2px;
+        }
+        background-color: $darkMint;
+    }
+    .menu {
+        flex-direction: column;
+        height: 50%;
+
+        @include phone {
+            flex-direction: row;
+            height: auto;
+            width: 70%;
+            position: absolute;
+        }
+
+        display: flex;
+        justify-content: space-between;
+
+        .step-link {
+            display: flex;
+            align-items: center;
+
+            .icon {
+                height: 29px;
+                width: 29px;
+
+                @include desktop {
+                    margin-left: -14.5px;
+                }
+
+                @include phone {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                border-radius: 50%;
+                background-color: $darkMint;
+
+                &.active {
+                    height: 45px;
+                    width: 45px;
+
+                    @include phone {
+                        height: 70px;
+                        width: 70px;
+                    }
+
+                    background-color: $coral;
+
+                    @include desktop {
+                        margin-left: -22.5px;
+                    }
+                }
+            }
+
+            .title {
+                @include phone {
+                    display: none;
+                }
+
+                padding-left: 20px;
+                color: $darkMint;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                &.active {
+                    padding-left: 15px;
+                    color: $white;
+                    font-size: 30px;
+                }
+            }
+
+            @include desktop {
+                &:first-of-type {
+                    align-items: flex-start;
+                }
+
+                &:last-of-type {
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+}
