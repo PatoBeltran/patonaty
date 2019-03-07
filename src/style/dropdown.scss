@@ -3,4 +3,17 @@
     color: $darkMint;
     border-bottom: 2px dashed;
     max-width: 300px;
+    .placeholder:hover {
+        color: $gold;
+        cursor: pointer;
+    }
+    &:hover {
+        border-bottom-color: $gold;
+    }
+    .option {
+        &:hover {
+            color: $darkerMint;
+        }
+        color: $darkMint;
+    }
 }

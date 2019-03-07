@@ -37,17 +37,17 @@ export default class Steps extends React.Component<any, any> {
             <>
                 <div className="steps">
                     <ReactPageScroller ref={(c: any) => this.scroller = c} pageOnChange={this.pageOnChange}>
-                        <Step name="invitation">
+                        <Step>
                             <Invitation guestName={guest.name.split(" ")[0]} pronoun={guest.pronoun} />
                         </Step>
-                        <Step name="ceremony">
+                        <Step>
                             <Ceremony />
                         </Step>
-                        <Step name="reception">
+                        <Step>
                             <Reception />
                         </Step>
-                        <Step name="rsvp">
-                            <RSVP />
+                        <Step>
+                            <RSVP guest={guest}/>
                         </Step>
                     </ReactPageScroller>
                 </div>

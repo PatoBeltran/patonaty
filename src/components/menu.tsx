@@ -4,21 +4,21 @@ import {StepLink} from "./stepLink";
 
 const Menu = ({ currentPage, goToPage }: any) => {
     const { t } = useTranslation();
-    
+
     return (
     <div className="menu-wrapper">
         <div className="separator" />
         <div className="menu">
-            <StepLink active={currentPage === 1} linkTo="invitation" onClick={() => goToPage(0)}>
+            <StepLink active={currentPage === 1} onClick={() => goToPage(0)}>
                 {t('invitationStep')}
             </StepLink>
-            <StepLink active={currentPage === 2} linkTo="ceremony" onClick={() => goToPage(1)}>
+            <StepLink active={currentPage === 2} onClick={() => goToPage(1)}>
                 {t('ceremonyStep')}
             </StepLink>
-            <StepLink active={currentPage === 3} linkTo="reception" onClick={() => goToPage(2)}>
+            <StepLink active={currentPage === 3} onClick={() => goToPage(2)}>
                 {t('receptionStep')}
             </StepLink>
-            <StepLink active={currentPage === 4} linkTo="rsvp" onClick={() => goToPage(3)}>
+            <StepLink active={currentPage === 4} onClick={() => goToPage(3)}>
                 {t('rsvpStep')}
             </StepLink>
         </div>

@@ -15,10 +15,17 @@
     "receptionDescription2": "the best brewery in Seattle. We'll be there from",
     "to": "to",
     "rsvpCoupleDescription": "We have a seat reserved for you and {{partnerName}}. Will you be going?",
+    "rsvpDescription": "We have a seat reserved for you. Will you be going?",
     "rsvpButton": "Send",
+    "rsvpCoupleOptions": [
+        { "key": "coupleGoing", "value": "We are both going"},
+        { "key": "going", "value": "Only I am going"},
+        { "key": "notGoing", "value": "We are not going"}],
+    "rsvpOptions": [
+        { "key": "going", "value": "I am going!"},
+        { "key": "notGoing", "value": "I am not going"}],
     "pageNotFound": "Oh no! We could not find your invitation!",
     "pleaseContact": "Please contact",
-    "rsvpOptions": ["We are both going", "We are not going", "Only I am going"],
     "or": "or",
     "thankYou": "Thank you!"
 }
