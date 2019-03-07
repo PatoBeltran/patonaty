@@ -15,7 +15,8 @@
     "receptionDescription": "Después haremos fiesta en Optimism, la cervecería más rica de todo Seattle. Ahí estaremos de {{startTime}} a {{endTime}}",
     "rsvpCoupleDescription": "Te tenemos un lugar reservado para tí y {{partnerName}} en nuestra boda. ¿Irán?",
     "rsvpButton": "Enviar",
-    "pageNotFound": "No encontramos tu invitación, por favor contacta a",
+    "pageNotFound": "Oh no! No encontramos tu invitación!",
+    "pleaseContact": "Por favor contacta a",
     "or": "o a",
     "thankYou": "¡Gracias!"
 }

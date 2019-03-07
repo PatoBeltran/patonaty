@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "http://PatoBeltran.github.io/patonaty",
   "scripts": {
-    "start": "webpack-dev-server --hot --colors --open",
+    "start": "webpack-dev-server --hot --colors --open --host 0.0.0.0",
     "build:watch": "webpack --mode=development --config webpack.config.js --watch",
     "build-prod:watch": "webpack --mode=production --config webpack.config.js --watch",
     "build": "webpack --mode=development --config webpack.config.js",
@@ -24,6 +24,7 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-i18next": "^10.1.2",
+    "react-page-scroller": "^1.4.3",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^4.0.8",

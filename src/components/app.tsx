@@ -6,6 +6,7 @@ import { getGuest } from "../framework/trello";
 import {withRouter} from "react-router";
 import Footer from "./footer";
 import Steps from "./steps";
+
 interface GuestInfo {
     name: string,
     plusOne?: GuestInfo

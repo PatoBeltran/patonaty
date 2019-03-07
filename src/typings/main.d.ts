@@ -23,6 +23,11 @@ declare module "*.scss" {
     export = content;
 }
 
+declare module "react-page-scroller" {
+    const content: any;
+    export default content;
+}
+
 interface GuestsList {
     [urlPath: string]: GuestMetadata;
 }

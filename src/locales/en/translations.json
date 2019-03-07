@@ -1,5 +1,4 @@
 {
-    "welcome": "Welcome to React!",
     "greetHim": "Dear {{guestName}}",
     "greetHer": "Dear {{guestName}}",
     "invitation": "We want to invite you to our civil wedding, which will take place on",
@@ -15,7 +14,8 @@
     "receptionDescription": "Afterwards, we will host a party at {{location}}, the best brewery in Seattle. We'll be there from {{startTime}} to {{endTime}}",
     "rsvpCoupleDescription": "We have a seat reserved for you and {{partnerName}}. Will you be going?",
     "rsvpButton": "Send",
-    "pageNotFound": "We could not find your invitation. Please contact",
+    "pageNotFound": "Oh no! We could not find your invitation!",
+    "pleaseContact": "Please contact",
     "or": "or",
     "thankYou": "Thank you!"
 }

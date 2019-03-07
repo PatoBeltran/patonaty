@@ -1,0 +1,25 @@
+.step {
+    padding: 0 20% 0 0;
+
+    @include phone {
+        padding: 15% 0 0 0;
+    }
+}
+
+/** =============== Invitation ================= **/
+
+.invitation-container {
+    font-weight: 100;
+    color: $white;
+    padding: 1em;
+    font-size: 4em;
+
+    @include phone {
+        padding: 0 1em;
+        font-size: 6em;
+    }
+}
+
+.dear-guest {
+    margin: 1em 0;
+}

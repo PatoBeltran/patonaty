@@ -6,10 +6,11 @@ const NoMatch = ({}) => {
     const { t } = useTranslation();
 
     return (
-        <>
-            <h1>{t('pageNotFound')} <GoldText>Naty</GoldText> {t('or')} <GoldText>Pato</GoldText></h1>
+        <div className="no-invitation-container">
+            <h1>{t('pageNotFound')}</h1>
+            <h1>{t('pleaseContact')} <GoldText>Naty</GoldText> {t('or')} <GoldText>Pato</GoldText></h1>
             <h1>{t('thankYou')}</h1>
-        </>
+        </div>
     );
 }
 
