@@ -23,14 +23,13 @@ enum Status {
 const RSVP = ({guest, status}: any) => {
     const { t } = useTranslation();
     let optionsKey = "rsvpOptions"
-    let descriptionKey = "rsvpDescription"
+    let description = t("rsvpDescription")
 
     if (guest.plusOne) {
         optionsKey = "rsvpCoupleOptions"
-        descriptionKey = "rsvpCoupleDescription"
+        description = t("rsvpCoupleDescription", {partnerName: guest.plusOne.name.split(" ")[0]})
     }
 
-    const description = t(descriptionKey, {partnerName: guest.plusOne.name.split(" ")[0]})
     const options = t(optionsKey, {returnObjects: true})
 
     let [rsvp, setRSVP] = React.useState<IRSVP>(status ? status : options[0])
@@ -39,13 +38,13 @@ const RSVP = ({guest, status}: any) => {
     const submit = () => {
         if(rsvp.key == Status.going) {
             going(guest.id, setLoading)
-            notGoing(guest.plusOne.id, setLoading)
+            guest.plusOne && notGoing(guest.plusOne.id, setLoading)
         } else if(rsvp.key == Status.notGoing) {
             notGoing(guest.id, setLoading)
-            notGoing(guest.plusOne.id, setLoading)
+            guest.plusOne && notGoing(guest.plusOne.id, setLoading)
         } else if(rsvp.key == Status.coupleGoing) {
             going(guest.id, setLoading)
-            going(guest.plusOne.id, setLoading)
+            guest.plusOne && going(guest.plusOne.id, setLoading)
         }
     }
 

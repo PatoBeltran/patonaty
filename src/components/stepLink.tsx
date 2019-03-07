@@ -9,8 +9,7 @@ export const StepLink = ({children, linkTo}: any) => {
         className="step-link"
         spy
         smooth
-        offset={-75}
-        duration={500}
+        offset={-100}
         onSetActive={(_: string) => setActive(true)}
         onSetInactive={() => setActive(false)}>
         <div className={active? "active icon" : "icon"}></div>
