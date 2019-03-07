@@ -62,7 +62,7 @@ const RSVP = ({guest, status}: any) => {
             <button onClick={() => submit()}>
                 {t('rsvpButton')} <FontAwesomeIcon icon={faPaperPlane} />
             </button>
-        </>
+        </div>
     );
 }
 
