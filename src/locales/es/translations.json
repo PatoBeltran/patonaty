@@ -12,11 +12,14 @@
     "rsvpStep": "RSVP",
     "ceremonyDescription": "Habrá una pequeña ceremonia en",
     "atTime": "a las",
-    "receptionDescription": "Después haremos fiesta en Optimism, la cervecería más rica de todo Seattle. Ahí estaremos de {{startTime}} a {{endTime}}",
+    "receptionDescription": "Después haremos fiesta en",
+    "receptionDescription2": "la cervecería más rica de todo Seattle. Ahí estaremos de",
+    "to": "a",
     "rsvpCoupleDescription": "Te tenemos un lugar reservado para tí y {{partnerName}} en nuestra boda. ¿Irán?",
     "rsvpButton": "Enviar",
     "pageNotFound": "Oh no! No encontramos tu invitación!",
     "pleaseContact": "Por favor contacta a",
+    "rsvpOptions": ["Sí vamos", "No vamos", "Solo yo voy"],
     "or": "o a",
     "thankYou": "¡Gracias!"
 }

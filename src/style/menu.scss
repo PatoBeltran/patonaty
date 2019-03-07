@@ -61,7 +61,7 @@
                 border-radius: 50%;
                 background-color: $darkMint;
 
-                &.current{
+                &.active {
                     height: 45px;
                     width: 45px;
 
@@ -88,7 +88,7 @@
                 font-size: 24px;
                 display: flex;
                 align-items: center;
-                &.current {
+                &.active {
                     padding-left: 15px;
                     color: $white;
                     font-size: 30px;

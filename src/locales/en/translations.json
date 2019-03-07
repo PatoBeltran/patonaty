@@ -11,11 +11,14 @@
     "rsvpStep": "RSVP",
     "ceremonyDescription": "We will have a small ceremony at ",
     "atTime": "at",
-    "receptionDescription": "Afterwards, we will host a party at {{location}}, the best brewery in Seattle. We'll be there from {{startTime}} to {{endTime}}",
+    "receptionDescription": "Afterwards, we will host a party at",
+    "receptionDescription2": "the best brewery in Seattle. We'll be there from",
+    "to": "to",
     "rsvpCoupleDescription": "We have a seat reserved for you and {{partnerName}}. Will you be going?",
     "rsvpButton": "Send",
     "pageNotFound": "Oh no! We could not find your invitation!",
     "pleaseContact": "Please contact",
+    "rsvpOptions": ["We are both going", "We are not going", "Only I am going"],
     "or": "or",
     "thankYou": "Thank you!"
 }
