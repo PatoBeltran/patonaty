@@ -7,7 +7,8 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { going, notGoing } from "../framework/trello"
 import {Loading} from "./loading";
 
-export interface IRSVP {
+
+interface IRSVP {
     key: Status,
     value: string
 }
@@ -30,21 +31,22 @@ const RSVP = ({guest, status}: any) => {
         description = t("rsvpCoupleDescription", {partnerName: guest.plusOne.name.split(" ")[0]})
     }
 
-    const options = t(optionsKey, {returnObjects: true})
+    const options = t(optionsKey, {returnObjects: true}) as { key: string, value: string }[]
 
     let [rsvp, setRSVP] = React.useState<IRSVP>(status ? status : options[0])
     let [loading, setLoading] = React.useState<boolean>(false);
 
     const submit = () => {
-        if(rsvp.key == Status.going) {
-            going(guest.id, setLoading)
-            guest.plusOne && notGoing(guest.plusOne.id, setLoading)
-        } else if(rsvp.key == Status.notGoing) {
-            notGoing(guest.id, setLoading)
-            guest.plusOne && notGoing(guest.plusOne.id, setLoading)
-        } else if(rsvp.key == Status.coupleGoing) {
-            going(guest.id, setLoading)
-            guest.plusOne && going(guest.plusOne.id, setLoading)
+        switch(rsvp.key) {
+            case Status.going:
+                going(guest.id, setLoading)
+                guest.plusOne && notGoing(guest.plusOne.id, setLoading)
+            case Status.notGoing:
+                notGoing(guest.id, setLoading)
+                guest.plusOne && notGoing(guest.plusOne.id, setLoading)
+            case Status.coupleGoing:
+                going(guest.id, setLoading)
+                guest.plusOne && going(guest.plusOne.id, setLoading)
         }
     }
 
@@ -64,5 +66,6 @@ const RSVP = ({guest, status}: any) => {
         </div>
     );
 }
+
 
 export default RSVP;
