@@ -23,6 +23,7 @@ const Options = ({handleClickOption, options, selected, showOptions}: any) => (
     <div className="options">
     { options.map((option: any) => (
         <Option
+        key={option.key}
         selected={selected.key==option.key}
         handleClick={() => handleClickOption(option)}
         hidden={!showOptions}>
