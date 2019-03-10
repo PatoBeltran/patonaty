@@ -8,7 +8,7 @@ const Reception = () => {
 
     return (
         <div className='step-container'>
-            <div className='reception-desc'>{t('receptionDescription')} <GoldText>Optimism</GoldText>, {t('receptionDescription2')} <GoldText>7pm</GoldText> {t('to')} <GoldText>11:30pm</GoldText></div>
+            <div className='reception-desc'>{t('receptionDescription')} <GoldText>Optimism</GoldText>. {t('receptionDescription2')} <GoldText>7pm</GoldText> {t('to')} <GoldText>11:30pm</GoldText></div>
             <Map location="reception"/>
         </div>
     );
