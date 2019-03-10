@@ -53,23 +53,12 @@
                     margin-left: -14.5px;
                 }
 
-                @include phone {
-                    height: 40px;
-                    width: 40px;
-                }
-
                 border-radius: 50%;
                 background-color: $darkMint;
 
                 &.active {
                     height: 45px;
                     width: 45px;
-
-                    @include phone {
-                        height: 70px;
-                        width: 70px;
-                    }
-
                     background-color: $coral;
 
                     @include desktop {
