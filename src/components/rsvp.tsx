@@ -9,15 +9,8 @@ import {Loading} from "./loading";
 
 
 interface IRSVP {
-    key: Status,
+    key: "going" | "notGoing" | "coupleGoing",
     value: string
-}
-
-
-enum Status {
-    going = "going",
-    notGoing = "notGoing",
-    coupleGoing = "coupleGoing"
 }
 
 
@@ -31,20 +24,20 @@ const RSVP = ({guest, status}: any) => {
         description = t("rsvpCoupleDescription", {partnerName: guest.plusOne.name.split(" ")[0]})
     }
 
-    const options = t(optionsKey, {returnObjects: true}) as { key: string, value: string }[]
+    const options = t(optionsKey, {returnObjects: true}) as IRSVP[]
 
     let [rsvp, setRSVP] = React.useState<IRSVP>(status ? status : options[0])
     let [loading, setLoading] = React.useState<boolean>(false);
 
     const submit = () => {
         switch(rsvp.key) {
-            case Status.going:
+            case "going":
                 going(guest.id, setLoading)
                 guest.plusOne && notGoing(guest.plusOne.id, setLoading)
-            case Status.notGoing:
+            case "notGoing":
                 notGoing(guest.id, setLoading)
                 guest.plusOne && notGoing(guest.plusOne.id, setLoading)
-            case Status.coupleGoing:
+            case "coupleGoing":
                 going(guest.id, setLoading)
                 guest.plusOne && going(guest.plusOne.id, setLoading)
         }
