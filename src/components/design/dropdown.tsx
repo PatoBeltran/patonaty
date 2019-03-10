@@ -9,8 +9,8 @@ export const Dropdown = ({options, selected, select}: any) => {
      }, [selected])
 
     return (
-    <div className="dropdown" onClick={() => setShowOptions(true)}>
-        <div className="placeholder" hidden={showOptions}>{selected.value}</div>
+    <div className="dropdown" onClick={() => setShowOptions(!showOptions)}>
+        <div className="placeholder">{selected.value}</div>
         <Options
         handleClickOption={ (option: any) => select(option) }
         options={options}
@@ -22,9 +22,9 @@ export const Dropdown = ({options, selected, select}: any) => {
 const Options = ({handleClickOption, options, selected, showOptions}: any) => (
     <div className="options">
     { options.map((option: any) => (
+        selected.key==option.key ? <></> :
         <Option
         key={option.key}
-        selected={selected.key==option.key}
         handleClick={() => handleClickOption(option)}
         hidden={!showOptions}>
         {option.value}
@@ -35,7 +35,7 @@ const Options = ({handleClickOption, options, selected, showOptions}: any) => (
 
 const Option = ({children, selected, hidden, handleClick}: any) => {
     return (<div
-        className={selected ? "selected option":"option"}
+        className="option"
         onClick={() => handleClick()}
         hidden={hidden}>
         {...children}
