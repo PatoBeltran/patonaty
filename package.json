@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "RSVP page for wedding",
   "main": "index.js",
-  "homepage": "http://PatoBeltran.github.io/patonaty",
+  "homepage": "https://civil.patoynaty.com",
   "private": true,
   "dependencies": {
     "react": "^16.8.4",
