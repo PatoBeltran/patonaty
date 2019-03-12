@@ -1,0 +1,24 @@
+@import "./colors.scss";
+@import "./_mixins.scss";
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: $bg;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+    line-height: 1.6;
+}
+
+html {
+    touch-action: manipulation;
+}
+
+@import "./app.scss";
+@import "./noMatch.scss";
+@import "./menu.scss";
+@import "./steps.scss";
+@import "./dropdown.scss";
+@import "./button.scss";
+@import "./background.scss";
+@import "./stars.scss";

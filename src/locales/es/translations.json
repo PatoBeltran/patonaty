@@ -1,0 +1,48 @@
+{
+    "greetHim": "Querido {{guestName}}",
+    "greetHer": "Querida {{guestName}}",
+    "invitation": "Te queremos invitar a nuestra boda civil el día",
+    "date": "20 de abril del 2019",
+    "dressCode": "El código de vestimenta es tipo cóctel.",
+    "signOff": "Atte.",
+    "sign": "Pato y Naty",
+    "invitationStep": "Invitación",
+    "ceremonyStep": "Ceremonia",
+    "receptionStep": "Fiesta",
+    "rsvpStep": "RSVP",
+    "ceremonyDescription": "Habrá una pequeña ceremonia en la terraza de",
+    "atTime": "a las",
+    "receptionDescription": "Después haremos fiesta en",
+    "receptionDescription2": "Ahí estaremos de",
+    "receptionDescription3": "La cena se va a servir a las",
+    "receptionDescription4": " ¡No llegues tarde!",
+    "to": "a",
+    "rsvpCoupleDescription": "Te tenemos un lugar reservado para tí y {{partnerName}} en nuestra boda. ¿Irán?",
+    "rsvpDescription": "Te tenemos un lugar reservado para tí. ¿Irás?",
+    "rsvpButton": "Enviar",
+    "rsvpButtonChange": "Cambiar",
+    "rsvpCoupleOptions": [
+        { "key": "coupleGoing", "value": "Sí vamos"},
+        { "key": "going", "value": "Solo yo voy"},
+        { "key": "notGoing", "value": "No vamos"}],
+    "rsvpOptions": [
+        { "key": "going", "value": "Sí voy"},
+        { "key": "notGoing", "value": "No voy"}],
+    "rsvpSent": {
+        "title": "Hey {{guestName}}, dijiste que",
+        "alone": {
+            "going": "sí vas",
+            "notGoing": "no vas"
+        },
+        "couple": {
+            "going": "{{plusOneName}} no va, pero tu sí",
+            "notGoing": "ni {{plusOneName}} ni tu van",
+            "coupleGoing": "{{plusOneName}} y tu van"
+        },
+        "changeYourMind": "¿Cambiaste de opinión?"
+    },
+    "pageNotFound": "¡Oh no! ¡No encontramos tu invitación!",
+    "pleaseContact": "Por favor contacta a",
+    "or": "o a",
+    "thankYou": "¡Gracias!"
+}

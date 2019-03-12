@@ -1,0 +1,20 @@
+.dropdown {
+    z-index: 1000;
+    font-size: xx-large;
+    color: $darkMint;
+    max-width: 300px;
+    .placeholder {
+        border-bottom: 2px dashed;
+        &:hover {
+            border-bottom-color: $gold;
+            color: $gold;
+            cursor: pointer;
+        }
+    }
+    .option {
+        &:hover {
+            color: $darkGold;
+        }
+        color: $darkMint;
+    }
+}

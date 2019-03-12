@@ -1,0 +1,48 @@
+{
+    "greetHim": "Dear {{guestName}}",
+    "greetHer": "Dear {{guestName}}",
+    "invitation": "We want to invite you to our civil wedding, which will take place on",
+    "date": "April 20th, 2019",
+    "dressCode": "The dress code is cocktail attire.",
+    "signOff": "Love,",
+    "sign": "Pato and Naty",
+    "invitationStep": "Invitation",
+    "ceremonyStep": "Ceremony",
+    "receptionStep": "Reception",
+    "rsvpStep": "RSVP",
+    "ceremonyDescription": "We will have a small ceremony at the rooftop of",
+    "atTime": "at",
+    "receptionDescription": "Afterwards, we will host a party at",
+    "receptionDescription2": "We'll be there from",
+    "receptionDescription3": "Dinner will be served at",
+    "receptionDescription4": ", so don't be late!",
+    "to": "to",
+    "rsvpCoupleDescription": "We have a seat reserved for you and {{partnerName}}. Will you be going?",
+    "rsvpDescription": "We have a seat reserved for you. Will you be going?",
+    "rsvpButton": "Send",
+    "rsvpButtonChange": "Update",
+    "rsvpCoupleOptions": [
+        { "key": "coupleGoing", "value": "We are both going"},
+        { "key": "going", "value": "Only I am going"},
+        { "key": "notGoing", "value": "We are not going"}],
+    "rsvpOptions": [
+        { "key": "going", "value": "I am going!"},
+        { "key": "notGoing", "value": "I am not going"}],
+    "rsvpSent": {
+        "title": "Hey {{guestName}}, you said that",
+        "alone": {
+            "going": "you are going!",
+            "notGoing": "you are not going!"
+        },
+        "couple": {
+            "going": "you are going, but {{plusOneName}} is not!",
+            "notGoing": "neither you or {{plusOneName}} are going!",
+            "coupleGoing": "you and {{plusOneName}} are going!"
+        },
+        "changeYourMind": "Did you change your mind?"
+    },
+    "pageNotFound": "Oh no! We could not find your invitation!",
+    "pleaseContact": "Please contact",
+    "or": "or",
+    "thankYou": "Thank you!"
+}
