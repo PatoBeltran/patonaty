@@ -74,7 +74,7 @@ const parseBoardCards = (data) => {
         cards_json[url] = { 
             name: card.name, 
             id: card.id,
-            url: `https://civil.patoynaty.com/#/${url}`
+            url: `http://civil.patoynaty.com/#/${url}`
         };
     });
 

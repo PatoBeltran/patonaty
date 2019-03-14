@@ -3,10 +3,14 @@ button {
     background: $coral;
     border-radius: 25px;
     border: none;
-    padding: 5px 25px;
+    padding: 10px 25px;
     color: $white;
     font-size: xx-large;
     margin-top: 25px;
+    font-family: "Raleway", sans-serif;
+    @include phone {
+        font-size: x-large;
+    }
     &:hover {
         background-color: $lightCoral;
         cursor: pointer;

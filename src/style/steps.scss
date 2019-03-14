@@ -10,10 +10,25 @@
 
 
 .step {
-    padding: 0 20% 0 0;
-    height: 100vh;
+    padding: 0 25% 0 0;
+    min-height: 100vh;
     @include phone {
         padding: 20% 0 0 0;
+    }
+}
+
+@include phone {
+    div[name=rsvp] {
+        height: 100vh;
+        overflow: hidden;
+        > .step {
+            height: auto;
+            .step-container {
+                > div {
+                    padding-bottom: 25px;
+                }
+            }
+        }
     }
 }
 
@@ -26,8 +41,8 @@
     flex-direction: column;
 
     @include phone {
-        padding: 0 1em;
-        font-size: 2em;
+        padding: 0 1.5em;
+        font-size: 1.5em;
     }
 }
 

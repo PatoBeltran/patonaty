@@ -1,9 +1,15 @@
 .dropdown {
     z-index: 1000;
-    font-size: xx-large;
     color: $darkMint;
-    max-width: 300px;
+    // max-width: 420px;
+    min-height: 120px;
+    padding-bottom: 0 !important;
+    display: inline-block;
+    div {
+        display: inline-block;
+    }
     .placeholder {
+        display: inline-block;
         border-bottom: 2px dashed;
         &:hover {
             border-bottom-color: $gold;
