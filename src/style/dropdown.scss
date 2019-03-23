@@ -5,11 +5,7 @@
     min-height: 120px;
     padding-bottom: 0 !important;
     display: inline-block;
-    div {
-        display: inline-block;
-    }
     .placeholder {
-        display: inline-block;
         border-bottom: 2px dashed;
         &:hover {
             border-bottom-color: $gold;
